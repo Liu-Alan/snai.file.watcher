@@ -15,7 +15,7 @@ func main() {
 	}
 	defer watcher.Close()
 
-	// 监听的目录（当前目录）
+	// 监听的目录
 	dirs := []string{"./log", "../data"}
 
 	// 添加要监视的目录
