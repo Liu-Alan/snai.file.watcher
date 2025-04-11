@@ -16,7 +16,7 @@ func main() {
 	defer watcher.Close()
 
 	// 监听的目录
-	dirs := []string{"./log", "../data"}
+	dirs := []string{"./log", "../data/"}
 
 	// 添加要监视的目录
 	for _, dir := range dirs {
@@ -24,7 +24,7 @@ func main() {
 		if err != nil {
 			log.Fatal(err)
 		}
-		fmt.Printf("监听%s目录是否有新文件...\n", dir)
+		fmt.Printf("监听%v目录是否有新文件...", dir)
 	}
 
 	// 监听事件
